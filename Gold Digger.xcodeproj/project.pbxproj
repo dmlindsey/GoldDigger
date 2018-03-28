@@ -12,6 +12,7 @@
 		112C356F206AE60B004E5F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C356D206AE60B004E5F4B /* Main.storyboard */; };
 		112C3571206AE60B004E5F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112C3570206AE60B004E5F4B /* Assets.xcassets */; };
 		112C3574206AE60B004E5F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C3572206AE60B004E5F4B /* LaunchScreen.storyboard */; };
+		112C357D206AEF5A004E5F4B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112C357C206AEF5A004E5F4B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		112C3570206AE60B004E5F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112C3573206AE60B004E5F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112C3575206AE60B004E5F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112C357C206AEF5A004E5F4B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112C357D206AEF5A004E5F4B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				112C3568206AE60B004E5F4B /* Gold Digger */,
 				112C3567206AE60B004E5F4B /* Products */,
+				112C357B206AEF5A004E5F4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				112C3575206AE60B004E5F4B /* Info.plist */,
 			);
 			path = "Gold Digger";
+			sourceTree = "<group>";
+		};
+		112C357B206AEF5A004E5F4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112C357C206AEF5A004E5F4B /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,11 @@
 					112C3565206AE60B004E5F4B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
